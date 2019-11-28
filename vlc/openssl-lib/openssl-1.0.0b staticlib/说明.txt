@@ -1,0 +1,5 @@
+openssl 的静态链接库 libeay32.lib ssleay32.lib，用他编译无需dll就可以运行。
+网上找不到，自己动手弄的，需要的同学你懂的。
+编译参数：
+/MT /Ox /O2 /Ob2 -O -DOPENSSL_NO_RC5 -DOPENSSL_NO_MD2 -DOPENSSL_NO_KRB5 -DOPENSSL_NO_JPAKE -DOPENSSL_NO_DYNAMIC_ENGINE  -DWIN32 -DOPENSSL_NO_SOCK  
+分debug和release版
